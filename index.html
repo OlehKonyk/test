@@ -6,44 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <form
-          
-          action="#"
-          class="form-container"
-          id="form"
-          netlify
-        > 
-          <div class="form-field">
-            <label for="user-name" class="form-field-lable">
-              <div class="ua-content">Ім'я</div>
-              <div class="en-content active">Name</div>
-            </label>
-            <input
-              type="text"
-              class="form-field-input"
-              name="Ім'я"
-              id="user-name"
-              required="true"
-            />
-          </div>
-          <div class="form-field form-field-emeil">
-            <label for="user-emeil" class="form-field-lable">
-              <div class="ua-content">Електронна пошта</div>
-              <div class="en-content active">Email</div>
-            </label>
-            <input
-              type="email"
-              class="form-field-input"
-              name="Email"
-              id="user-email"
-              required="true"
-            />
-          </div>
-          <button class="form-btn" id="launch-btn">
-            <div class="ua-content">Запустити гуся</div>
-            <div class="en-content active">Launch the Goose</div>
-          </button>
-        </form>
-        <script src="index.js"></script>
+    <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+      
 </body>
 </html>

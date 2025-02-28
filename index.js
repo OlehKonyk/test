@@ -1,16 +1,17 @@
-form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const formData = new FormData(form);
+const handleSubmit = event => {
+    event.preventDefault();
   
-    launchBtn.setAttribute("disabled", true);
+    const myForm = event.target;
+    const formData = new FormData(myForm);
   
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
+      body: new URLSearchParams(formData).toString()
     })
-      .then(() => {})
-      .catch((error) => console.log("Sending form failed"));
-  });
-
- 
+      .then(() => console.log("Form successfully submitted"))
+      .catch(error => alert(error));
+  };
+  
+  document.querySelector("form").addEventListener("submit", handleSubmit);
+  
