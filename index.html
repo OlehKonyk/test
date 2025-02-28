@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form
+          onsubmit="return validateEmail()"
+          action="#"
+          class="form-container"
+          id="form"
+          netlify
+        >
+          <img src="./img/tryzub.svg" class="tryzub" alt="tryzub" />
+          <div class="form-text">
+            <div class="ua-content">
+              <h3 class="form-title">Поділися, будь ласка, поштою
+              </h3>
+            </div>
+            <div class="en-content active">
+              <h3 class="form-title">Please share by mail
+              </h3>
+            </div>
+          </div>
+            <div class="form-text">
+            <div class="ua-content">
+              <p class="form-descr">та запиши гуся до бандерозагону
+              </p>
+            </div>
+            <div class="en-content active">
+              <p class="form-descr">and record the goose to the banderherd
+              </p>
+            </div>
+          </div>  
+          <div class="form-field">
+            <label for="user-name" class="form-field-lable">
+              <div class="ua-content">Ім'я</div>
+              <div class="en-content active">Name</div>
+            </label>
+            <input
+              type="text"
+              class="form-field-input"
+              name="Ім'я"
+              id="user-name"
+              required="true"
+            />
+          </div>
+          <div class="form-field form-field-emeil">
+            <label for="user-emeil" class="form-field-lable">
+              <div class="ua-content">Електронна пошта</div>
+              <div class="en-content active">Email</div>
+            </label>
+            <input
+              type="email"
+              class="form-field-input"
+              name="Email"
+              id="user-email"
+              required="true"
+            />
+          </div>
+          <button class="form-btn" id="launch-btn">
+            <div class="ua-content">Запустити гуся</div>
+            <div class="en-content active">Launch the Goose</div>
+          </button>
+        </form>
+        <script src="index.js"></script>
+</body>
+</html>
